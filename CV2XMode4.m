@@ -75,7 +75,7 @@ function [PDR, deltaHD, deltaSEN, deltaPRO, deltaCOL, CBR] = CV2XMode4(beta,lamb
                     RBs = 12;     % Number of RBs needed to transmit the DATA field of each message
             end
     end
-
+    
     noise = -95 - 10*log10(50/RBs);     % Noise corresponding to the DATA field of each message. Assumes a noise figure of 9dB and 10MHz channel (background noise of -95dBm). The total number of RBs in 10MHz is 50.
 
     % Calculate errors associated to HD, SEN and PRO:
